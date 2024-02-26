@@ -1,0 +1,24 @@
+* tab-line-nerd-icons.el - Add icons to tab-line
+
+This package uses the [[https://github.com/rainstormstudio/nerd-icons.el][nerd-icons]] package to apply appropriate icons to tab-line tabs.
+
+** Installation
+
+For now this package isn't on any package archive. If you have Emacs 29.1 or later you can use package-vc-install to get the package.
+
+#+begin_src emacs-lisp
+  (when (package-installed-p 'tab-line-nerd-icons)
+    (package-vc-install ('tab-line-nerd-icons :url "")))
+#+end_src
+
+I will add the package to MELPA later.
+
+Enable with:
+
+#+begin_src emacs-lisp
+  (tab-line-nerd-icons-global-mode)
+#+end_src
+
+** Screenshots
+
+[[file:screens/screenshot.png]]
