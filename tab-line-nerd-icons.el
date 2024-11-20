@@ -6,7 +6,7 @@
 ;; Author: Lucius Martius <lucius-martius@dorsai.eu>
 ;; Keywords: lisp
 ;; Version: 0.1
-;; Package-Requires: ((emacs "27.1") (nerd-icons "0.0.1"))
+;; Package-Requires: ((emacs "28.1") (nerd-icons "0.1"))
 ;; URL: https://github.com/lucius_martius/tab-line-nerd-icons
 
 ;; This program is free software; you can redistribute it and/or modify
