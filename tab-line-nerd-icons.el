@@ -7,7 +7,7 @@
 ;; Keywords: lisp
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "28.1") (nerd-icons "0.1"))
-;; URL: https://github.com/lucius_martius/tab-line-nerd-icons
+;; URL: https://github.com/lucius-martius/tab-line-nerd-icons
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
