@@ -60,7 +60,7 @@
                          (:height ,tab-line-nerd-icons-base-icon-height
                           :inherit ,(plist-get base-props 'face))))
             (icon-raise (+ (plist-get (get-text-property 0 'display icon) 'raise) 0.15)))
-      (concat (propertize (apply 'propertize icon base-props)
+      (concat (propertize (apply #'propertize icon base-props)
                           'face icon-face
                           'display `((space-width ,tab-line-nerd-icons-space-width)
                                      (raise ,icon-raise)))
