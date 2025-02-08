@@ -49,6 +49,11 @@
   :group 'tab-line-nerd-icons
   :type 'float)
 
+(defcustom tab-line-nerd-icons-extra-raise 0.15
+  "The raise display property of the icon will be increased by this value."
+  :group 'tab-line-nerd-icons
+  :type 'float)
+
 (defun tab-line-nerd-icons-add-icon-advice (orig-fn tab &rest args)
   "Add an icon based on the TAB's buffer to the result of ORIG-FN."
   (if-let* ((base-str (apply orig-fn tab args))
@@ -59,7 +64,8 @@
             (icon-face `(,(get-text-property 0 'face icon)
                          (:height ,tab-line-nerd-icons-base-icon-height
                           :inherit ,(plist-get base-props 'face))))
-            (icon-raise (+ (plist-get (get-text-property 0 'display icon) 'raise) 0.15)))
+            (icon-raise (+ (plist-get (get-text-property 0 'display icon) 'raise)
+                           tab-line-nerd-icons-extra-raise)))
       (concat (propertize (apply #'propertize icon base-props)
                           'face icon-face
                           'display `((space-width ,tab-line-nerd-icons-space-width)
